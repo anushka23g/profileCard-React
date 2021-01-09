@@ -1,0 +1,31 @@
+import React from 'react';
+
+
+const Card=(props)=>{
+  
+const buttonsMarkup=(
+  
+  <div>
+    <button className="button button2">YES</button>
+    <button className="button button3">NO</button>
+  </div>);
+  
+return (
+  <div>
+     <div className="card">
+    <img src={props.image} alt={props.name} style= {{width: 100}}/>
+    <div className="container">
+      <h4><b>{props.name}</b></h4> 
+      <p>{props.email}</p>
+      <p>{props.profession}</p> 
+      {buttonsMarkup}
+
+    </div>
+  </div>
+  
+  </div>
+)
+
+}
+
+export default Card;
